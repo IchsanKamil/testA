@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  tes:
+    build: ./server
+    ports:
+      - "3000:3000"
+      - "5432:5432"
+  postgres:
+    image: "postgres"
+    ports:
+      - "5432:9432"
